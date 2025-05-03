@@ -1,4 +1,5 @@
 import type { CounterRepository } from "./CounterRepository.js";
+
 /**
  * @name LocalStorageCounterRepository
  * @description The `LocalStorageCounterRepository` class implements the `CounterRepository` interface to manage the counter value in the browser's local storage.
