@@ -1,3 +1,18 @@
+/**
+ * @name CounterService
+ * @description The `CounterService` class provides methods to manage a simple counter. It allows you to increment, decrement, retrieve, and reset the counter value.
+ *
+ * @field count {number} - The current value of the counter (private).
+ *
+ * @method getCount - Retrieves the current value of the counter.
+ * @returns {number} The current counter value.
+ *
+ * @method increment - Increments the counter value by 1.
+ *
+ * @method decrement - Decrements the counter value by 1, but does not allow it to go below 0.
+ *
+ * @method resetCount - Resets the counter value to 0.
+ */
 export class CounterService {
   private count = 0;
 
