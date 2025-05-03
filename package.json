@@ -4,7 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "vitest"
+    "test:units": "vitest --watch=false",
+    "test:units:watch": "vitest",
+    "test:units:coverage": "vitest run --coverage --watch=false"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
+    "@vitest/coverage-v8": "^3.1.2",
     "jsdom": "^26.1.0",
     "typescript": "^5.8.3",
     "vitest": "^3.1.2"
