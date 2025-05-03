@@ -4,8 +4,8 @@ describe("LocalStorageCounterRepository", () => {
   let repository: LocalStorageCounterRepository;
 
   beforeEach(() => {
-    repository = new LocalStorageCounterRepository();
     localStorage.clear();
+    repository = new LocalStorageCounterRepository();
   });
 
   it("should save and load count", () => {
