@@ -1,3 +1,5 @@
+import type { CounterRepository } from "./CounterRepository.js";
+
 /**
  * @name CounterService
  * @description The `CounterService` class provides methods to manage a simple counter. It allows you to increment, decrement, retrieve, and reset the counter value.
@@ -14,7 +16,11 @@
  * @method resetCount - Resets the counter value to 0.
  */
 export class CounterService {
-  private count = 0;
+  private count: number;
+
+  constructor(private repository: CounterRepository) {
+    this.count = this.repository.load();
+  }
 
   getCount(): number {
     return this.count;
@@ -22,12 +28,14 @@ export class CounterService {
 
   increment(): void {
     this.count++;
+    this.repository.save(this.count);
   }
 
   decrement(): void {
     if (this.count === 0) return;
 
     this.count--;
+    this.repository.save(this.count);
   }
 
   resetCount(): void {

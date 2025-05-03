@@ -1,10 +1,15 @@
+import type { CounterRepository } from "./CounterRepository.js";
 import { CounterService } from "./CounterService.js";
 
 describe("CounterService", () => {
   let counter: CounterService;
+  let mockCounterRepository: CounterRepository = {
+    save: vi.fn(),
+    load: vi.fn(() => 0),
+  };
 
   beforeEach(() => {
-    counter = new CounterService();
+    counter = new CounterService(mockCounterRepository);
   });
 
   it("should start at 0", () => {
