@@ -1,9 +1,14 @@
 import { CounterService } from "./CounterService.js";
 
 describe("CounterService", () => {
+  let counter: CounterService;
+
+  beforeEach(() => {
+    counter = new CounterService();
+  });
+
   it("should start at 0", () => {
     // Arrange
-    const counter = new CounterService();
     const count = counter.getCount();
 
     // Assert
@@ -11,9 +16,6 @@ describe("CounterService", () => {
   });
 
   it("should increment the count", () => {
-    // Arrange
-    const counter = new CounterService();
-
     // Act
     counter.increment();
 
@@ -23,10 +25,16 @@ describe("CounterService", () => {
   });
 
   it("should decrement the count", () => {
-    // Arrange
-    const counter = new CounterService();
+    // Act
     counter.increment();
+    counter.decrement();
 
+    // Assert
+    const count = counter.getCount();
+    expect(count).toBe(0);
+  });
+
+  it("should not allow the count to go below 0", () => {
     // Act
     counter.decrement();
 

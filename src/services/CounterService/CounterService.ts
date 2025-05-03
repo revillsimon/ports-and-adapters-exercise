@@ -10,6 +10,7 @@ export class CounterService {
   }
 
   decrement() {
+    if (this.count === 0) return;
     this.count--;
   }
 }
