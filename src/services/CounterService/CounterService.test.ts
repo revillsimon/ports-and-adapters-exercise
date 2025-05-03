@@ -42,4 +42,15 @@ describe("CounterService", () => {
     const count = counter.getCount();
     expect(count).toBe(0);
   });
+
+  it("should reset the count to 0", () => {
+    // Act
+    counter.increment();
+    counter.increment();
+    counter.resetCount();
+
+    // Assert
+    const count = counter.getCount();
+    expect(count).toBe(0);
+  });
 });

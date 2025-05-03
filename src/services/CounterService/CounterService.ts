@@ -13,4 +13,8 @@ export class CounterService {
     if (this.count === 0) return;
     this.count--;
   }
+
+  resetCount() {
+    this.count = 0;
+  }
 }
