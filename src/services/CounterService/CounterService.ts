@@ -8,4 +8,8 @@ export class CounterService {
   increment(): void {
     this.count++;
   }
+
+  decrement() {
+    this.count--;
+  }
 }

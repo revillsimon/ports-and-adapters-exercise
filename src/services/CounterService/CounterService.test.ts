@@ -21,4 +21,17 @@ describe("CounterService", () => {
     const count = counter.getCount();
     expect(count).toBe(1);
   });
+
+  it("should decrement the count", () => {
+    // Arrange
+    const counter = new CounterService();
+    counter.increment();
+
+    // Act
+    counter.decrement();
+
+    // Assert
+    const count = counter.getCount();
+    expect(count).toBe(0);
+  });
 });
