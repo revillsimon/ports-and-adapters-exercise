@@ -9,12 +9,13 @@ export class CounterService {
     this.count++;
   }
 
-  decrement() {
+  decrement(): void {
     if (this.count === 0) return;
+
     this.count--;
   }
 
-  resetCount() {
+  resetCount(): void {
     this.count = 0;
   }
 }
