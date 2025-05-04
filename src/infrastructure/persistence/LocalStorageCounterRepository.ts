@@ -1,4 +1,4 @@
-import type { CounterRepository } from "./CounterRepository.js";
+import type { CounterRepository } from "../../domain/CounterRepository.js";
 
 /**
  * @name LocalStorageCounterRepository

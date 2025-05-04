@@ -1,4 +1,4 @@
-import { LocalStorageCounterRepository } from "./LocalStorageCounterRepository.js";
+import { LocalStorageCounterRepository } from "../../infrastructure/persistence/LocalStorageCounterRepository.js";
 
 describe("LocalStorageCounterRepository", () => {
   let repository: LocalStorageCounterRepository;

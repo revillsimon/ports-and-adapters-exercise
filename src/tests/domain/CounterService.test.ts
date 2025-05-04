@@ -1,5 +1,5 @@
-import type { CounterRepository } from "../../repositories/CounterRespository/CounterRepository.js";
-import { CounterService } from "./CounterService.js";
+import type { CounterRepository } from "../../domain/CounterRepository.js";
+import { CounterService } from "../../domain/CounterService.js";
 
 describe("CounterService", () => {
   let counter: CounterService;

@@ -1,4 +1,4 @@
-import type { CounterRepository } from "../../repositories/CounterRespository/CounterRepository.js";
+import type { CounterRepository } from "./CounterRepository.js";
 
 /**
  * @name CounterService
