@@ -6,6 +6,8 @@ import type { CounterRepository } from "./CounterRepository.js";
  *
  * @field count {number} - The current value of the counter (private).
  *
+ * @field repository {CounterRepository} - The repository used to persist the counter value.
+ *
  * @method getCount - Retrieves the current value of the counter.
  * @returns {number} The current counter value.
  *
