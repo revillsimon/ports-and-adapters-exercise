@@ -46,4 +46,15 @@ describe("CounterUseCase", () => {
     const count = useCase.getCount();
     expect(count).toBe(0);
   });
+
+  it("should reset the count to 0", () => {
+    // Act
+    useCase.increment();
+    useCase.increment();
+    useCase.reset();
+
+    // Assert
+    const count = useCase.getCount();
+    expect(count).toBe(0);
+  });
 });

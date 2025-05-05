@@ -19,4 +19,8 @@ export class CounterUseCase {
   decrement(): void {
     this.service.decrement();
   }
+
+  reset(): void {
+    this.service.resetCount();
+  }
 }
