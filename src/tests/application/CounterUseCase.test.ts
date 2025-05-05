@@ -18,4 +18,13 @@ describe("CounterUseCase", () => {
     // Assert
     expect(initialCount).toBe(0);
   });
+
+  it("should increment the count", () => {
+    // Act
+    useCase.increment();
+
+    // Assert
+    const count = useCase.getCount();
+    expect(count).toBe(1);
+  });
 });

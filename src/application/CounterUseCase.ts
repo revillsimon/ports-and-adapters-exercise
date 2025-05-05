@@ -11,4 +11,8 @@ export class CounterUseCase {
   getCount(): number {
     return this.service.getCount();
   }
+
+  increment(): void {
+    this.service.increment();
+  }
 }
