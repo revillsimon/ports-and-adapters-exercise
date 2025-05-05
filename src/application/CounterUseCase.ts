@@ -34,8 +34,8 @@ import { CounterService } from "../domain/CounterService.js";
 export class CounterUseCase {
   private service: CounterService;
 
-  constructor(private repository: CounterRepository) {
-    this.service = new CounterService(this.repository);
+  constructor(repository: CounterRepository) {
+    this.service = new CounterService(repository);
   }
 
   getCount(): number {
