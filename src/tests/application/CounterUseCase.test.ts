@@ -27,4 +27,23 @@ describe("CounterUseCase", () => {
     const count = useCase.getCount();
     expect(count).toBe(1);
   });
+
+  it("should decrement the count", () => {
+    // Act
+    useCase.increment();
+    useCase.decrement();
+
+    // Assert
+    const count = useCase.getCount();
+    expect(count).toBe(0);
+  });
+
+  it("should not allow the count to go below 0", () => {
+    // Act
+    useCase.decrement();
+
+    // Assert
+    const count = useCase.getCount();
+    expect(count).toBe(0);
+  });
 });

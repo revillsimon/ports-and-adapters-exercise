@@ -15,4 +15,8 @@ export class CounterUseCase {
   increment(): void {
     this.service.increment();
   }
+
+  decrement(): void {
+    this.service.decrement();
+  }
 }
