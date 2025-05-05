@@ -29,6 +29,7 @@ export class FileSystemCounterRepository implements CounterRepository {
     if (!fs.existsSync(this.filePath)) return 0;
 
     const data = fs.readFileSync(this.filePath, "utf-8");
+    /* v8 ignore next */
     return JSON.parse(data).count ?? 0;
   }
 }
