@@ -42,5 +42,6 @@ export class CounterService {
 
   resetCount(): void {
     this.count = 0;
+    this.repository.save(this.count);
   }
 }
