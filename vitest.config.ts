@@ -13,6 +13,7 @@ export default defineConfig({
         "src/index.ts",
         "**/*.d.ts",
         "**/CounterRepository.ts",
+        "examples/**/*",
       ],
     },
   },
