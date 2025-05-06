@@ -1,6 +1,6 @@
-# Ports and Adpaters Exercise (Hexagonal Architecture)
+# Ports and Adapters Exercise (Hexagonal Architecture)
 
-![Ports and Adpaters Architecture](/assets/architecture-hero.png "Ports and Adpaters Architecture")
+![Ports and Adapters Architecture](/assets/architecture-hero.png "Ports and Adpaters Architecture")
 
 ## Introduction
 
