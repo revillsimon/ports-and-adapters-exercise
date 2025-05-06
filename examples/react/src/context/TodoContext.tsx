@@ -1,21 +1,13 @@
-import { createContext, useContext, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 
 import {
   CounterUseCase,
   LocalStorageCounterRepository,
 } from "../../../../dist/index.js";
+import { CounterContext } from "./useCounter.js";
 
 const repository = new LocalStorageCounterRepository();
 const counterUseCase = new CounterUseCase(repository);
-
-interface CounterContextType {
-  count: number;
-  increment(): void;
-  decrement(): void;
-  reset(): void;
-}
-
-const CounterContext = createContext<CounterContextType | null>(null);
 
 export const CounterProvider = ({ children }: { children: ReactNode }) => {
   const [count, setCount] = useState(counterUseCase.getCount());
@@ -40,14 +32,4 @@ export const CounterProvider = ({ children }: { children: ReactNode }) => {
       {children}
     </CounterContext.Provider>
   );
-};
-
-export const useCounter = () => {
-  const context = useContext(CounterContext);
-
-  if (!context) {
-    throw new Error("useCounter must be used within a CounterProvider");
-  }
-
-  return context;
 };

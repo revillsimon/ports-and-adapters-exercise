@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev:vanilla": "npm run build && npx live-server --open=examples/vanilla",
-    "dev:react": "npm run build && cd examples/react && npx live-server --mount=[\"/\",\"../../dist\"]",
+    "dev:react": "npm run build && cd examples/react && npm run dev",
     "test:units": "vitest --watch=false",
     "test:units:watch": "vitest",
     "test:units:coverage": "vitest run --coverage --watch=false"

@@ -1,1 +1,2 @@
-export { CounterProvider, useCounter } from "./TodoContext";
+export { CounterProvider } from "./TodoContext";
+export { useCounter } from "./useCounter";
