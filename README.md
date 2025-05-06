@@ -1,5 +1,7 @@
 # Ports and Adpaters Exercise (Hexagonal Architecture)
 
+![Ports and Adpaters Architecture](/assets/architecture-hero.png "Ports and Adpaters Architecture")
+
 ## Introduction
 
 This repo provides an example of the excellent architectural style of hexagonal architecture, also know as ports and adapters.
