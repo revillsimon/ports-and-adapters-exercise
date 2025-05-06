@@ -8,7 +8,7 @@ In this simple counter application example (there's nothing simpler than that), 
 
 The `CounterService` uses depedency injection in order to work with a mechanism to persist the state of the counter. This could be implemented in many ways, however, you will see that the service requires an interface provided by `CounterRepository`. So long as the implementation adheres to that interface, it will work. This is why the file system and local storage repositories in `src/infrastucture/persistence` can work interchangably with the service.
 
-The project has been built using TDD and therefore all code has 100% coverage, and mocking any dependencies because of the ports and adapters architecture.
+The project has been built using TDD and therefore all code has 100% coverage, and mocking any dependencies is remarkable easy because of the ports and adapters architecture. This also gives us a blazing fast test suite!
 
 To illustrate how flexible this architecture is, you can run the following scripts to see how the compiled TypeScript modules in the dist folder work seemlessly with a vanilla JavaScript project as well as a TypeScript-powered React app with the Vite build tool.
 
