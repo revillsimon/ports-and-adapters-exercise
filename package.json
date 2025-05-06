@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev:vanilla": "tsc",
     "test:units": "vitest --watch=false",
     "test:units:watch": "vitest",
     "test:units:coverage": "vitest run --coverage --watch=false"

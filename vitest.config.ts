@@ -10,6 +10,7 @@ export default defineConfig({
       ...coverageConfigDefaults,
       exclude: [
         ...coverageConfigDefaults.exclude,
+        "src/index.ts",
         "**/*.d.ts",
         "**/CounterRepository.ts",
       ],
