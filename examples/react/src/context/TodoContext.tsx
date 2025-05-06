@@ -3,8 +3,8 @@ import { useState, type ReactNode } from "react";
 import {
   CounterUseCase,
   LocalStorageCounterRepository,
-} from "../../../../dist/index.js";
-import { CounterContext } from "./useCounter.js";
+} from "../../../../dist";
+import { CounterContext } from "./useCounter";
 
 const repository = new LocalStorageCounterRepository();
 const counterUseCase = new CounterUseCase(repository);
