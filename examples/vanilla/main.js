@@ -1,5 +1,7 @@
-import { LocalStorageCounterRepository } from "../../dist/index.js";
-import { CounterUseCase } from "../../dist/index.js";
+import {
+  LocalStorageCounterRepository,
+  CounterUseCase,
+} from "../../dist/index.js";
 
 const repository = new LocalStorageCounterRepository();
 const counterUseCase = new CounterUseCase(repository);
