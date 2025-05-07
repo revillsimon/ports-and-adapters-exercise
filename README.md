@@ -16,6 +16,8 @@ To illustrate how flexible this architecture is, you can run the following scrip
 
 For more information on Hexagonal Architecture:
 
+https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c
+
 https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)
 
 https://alistair.cockburn.us/hexagonal-architecture
