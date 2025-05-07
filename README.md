@@ -18,6 +18,8 @@ For more information on Hexagonal Architecture:
 
 https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)
 
+https://alistair.cockburn.us/hexagonal-architecture
+
 A loosely coupled codebase is easy to test, refactor and scale!
 
 ## Getting started
